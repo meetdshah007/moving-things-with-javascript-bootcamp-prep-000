@@ -1,8 +1,9 @@
-const app = "I don't do much."
+const app = "I don't do much.";
+const dodger = document.getElementById('dodger')
 
 function moveDodgerRight() {
-  var leftNumbers = dodger.style.left.replace('px', '')
-  var left = parseInt(leftNumbers, 10)
+  const leftNumbers = dodger.style.left.replace('px', '');
+  const left = parseInt(leftNumbers, 10);
  
   if (left > 0) {
     dodger.style.left = `${left - 1}px`
